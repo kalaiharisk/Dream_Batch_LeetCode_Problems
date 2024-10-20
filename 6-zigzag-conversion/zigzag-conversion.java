@@ -24,11 +24,11 @@ class Solution {
                 cur--;
             }
         }
-            String res="";
-            for(String x:arr)
-            {
-                res+=x;
-            }
+        String res="";
+        for(String x:arr)
+        {
+            res+=x;
+        }
         return res;
         
     }
