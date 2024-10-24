@@ -10,25 +10,24 @@
  * };
  */
 class Solution {
-    int checkheight(TreeNode* root)
+   int checkheight(TreeNode* root)
+   {
+    if(root==nullptr)
     {
-        if(root==nullptr)
-        {
-            return 0;
-        }
-        int leftheight=checkheight(root->left);
-        int rightheight=checkheight(root->right);
-
-        if(leftheight==-1 || rightheight==-1)
-        {
-            return -1;
-        }
-        if(abs(leftheight-rightheight)>1)
-        {
-            return -1;
-        }
-        return max(leftheight,rightheight)+1;
+        return 0;
     }
+    int leftheight=checkheight(root->left);
+    int rightheight=checkheight(root->right);
+    if(leftheight==-1 || rightheight==-1)
+    {
+        return -1;
+    }
+    if(abs(leftheight-rightheight)>1)
+    {
+        return -1;
+    }
+    return max(leftheight,rightheight)+1;
+   }
 public:
     bool isBalanced(TreeNode* root) {
         return checkheight(root)!=-1;
