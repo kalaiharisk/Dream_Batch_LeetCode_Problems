@@ -15,8 +15,8 @@ public:
        {
         return root;
        }
-       if(root->val==p->val)  return p;
-       if(root->val==q->val) return q;
+       if(root->val==p->val)  return root;
+       if(root->val==q->val) return root;
        if(root->val<p->val && root->val<q->val) return  lowestCommonAncestor(root->right,p,q);
        else if(root->val>p->val && root->val>q->val) return  lowestCommonAncestor(root->left,p,q);
        else return root;
