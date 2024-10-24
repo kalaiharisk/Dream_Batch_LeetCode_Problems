@@ -5,18 +5,15 @@ class Solution {
         {
             if(c=='(')
             {
-               stack.push(')');
-
-            }
-            else if(c=='[')
-            {
-               stack.push(']');
-
+                stack.push(')');
             }
             else if(c=='{')
             {
-
                 stack.push('}');
+            }
+            else if(c=='[')
+            {
+                stack.push(']');
             }
             else
             {
@@ -26,7 +23,6 @@ class Solution {
                 }
             }
         }
-
         return stack.isEmpty();
         
     }
