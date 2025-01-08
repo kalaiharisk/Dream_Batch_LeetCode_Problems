@@ -1,8 +1,7 @@
 class Solution {
     public String convert(String s, int numRows) {
-        
         if(numRows==1) return s;
-        String[] arr=new String[numRows];
+        String arr[]=new String[numRows];
         for(int i=0;i<numRows;i++)
         {
             arr[i]="";
@@ -28,7 +27,7 @@ class Solution {
         String res="";
         for(String x:arr)
         {
-            res+=x;
+             res+=x;
         }
         return res;
     }
