@@ -8,7 +8,7 @@ public:
             for(int j=i;j<s.length();j++)
             {
                 int l=i,r=j;
-                while(l<=r && s[l]==s[r])
+                while(l<r && s[l]==s[r])
                 {
                     l++;
                     r--;
