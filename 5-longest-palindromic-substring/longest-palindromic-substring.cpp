@@ -17,7 +17,6 @@ public:
                 {
                     res=s.substr(i,j-i+1);
                     reslen=j-i+1;
-                    
                 }
             }
         }
