@@ -1,5 +1,6 @@
 class Solution {
     public String convert(String s, int numRows) {
+        
         if(numRows==1) return s;
         String[] arr=new String[numRows];
         for(int i=0;i<numRows;i++)
@@ -11,7 +12,7 @@ class Solution {
         for(int i=0;i<s.length();i++)
         {
             arr[cur]+=s.charAt(i);
-            if(cur==0 || cur==numRows- 1)
+            if(cur==0 || cur==numRows-1)
             {
                 godown=!godown;
             }
@@ -30,6 +31,5 @@ class Solution {
             res+=x;
         }
         return res;
-        
     }
 }
